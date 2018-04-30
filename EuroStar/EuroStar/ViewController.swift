@@ -17,42 +17,53 @@ class ViewController: UIViewController {
     @IBOutlet weak var contactUsButton: UIButton!
     @IBOutlet weak var socialLinksButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        Once the application has loaded, load all of the buttons and make the corners rounded
+        
+        servicesButton.layer.cornerRadius = 5
+        portfolioButton.layer.cornerRadius = 5
+        aboutUsButton.layer.cornerRadius = 5
+        contactUsButton.layer.cornerRadius = 5
+        socialLinksButton.layer.cornerRadius = 5
+
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     // Actions for our Services Button
     @IBAction func servicesButton(_ sender: Any) {
-        //
-        // TODO
-        //
+        //        When the button is clicked, the user is taken to this tab bar
+        self.tabBarController?.selectedIndex = 2
     }
     
-    // Actions for our Portfolio Button
+    
+    // Actions for our Services Button
     @IBAction func portfolioButton(_ sender: Any) {
-        //
-        // TODO
-        //
+        //        When the button is clicked, the user is taken to this tab bar
+        self.tabBarController?.selectedIndex = 3
     }
     
-    // Actions for our About-Us Button
+    
+    // Actions for our Services Button
     @IBAction func aboutUsButton(_ sender: Any) {
-        //
-        // TODO
-        //
+        //        When the button is clicked, the user is taken to this tab bar
+        self.tabBarController?.selectedIndex = 1
     }
     
-    // Actions for our Contact-Us Button\
+    
+    // Actions for our Services Button
     @IBAction func contactUsButton(_ sender: Any) {
-        //
-        // TODO
-        //
+        //        When the button is clicked, the user is taken to this tab bar
+        self.tabBarController?.selectedIndex = 4
     }
 }
 
