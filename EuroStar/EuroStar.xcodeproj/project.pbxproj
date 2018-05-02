@@ -10,6 +10,7 @@
 		6A0C4B3720983FFD008B9222 /* ServicesTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C4B3620983FFD008B9222 /* ServicesTableTableViewController.swift */; };
 		6A0C4B392098403A008B9222 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C4B382098403A008B9222 /* ServicesTableViewCell.swift */; };
 		6A0C4B3B20984073008B9222 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C4B3A20984073008B9222 /* ServicesViewController.swift */; };
+		6A0C4B3F20997BC4008B9222 /* aboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C4B3E20997BC4008B9222 /* aboutUsViewController.swift */; };
 		6A6F7E502096C907003B79B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F7E4F2096C907003B79B3 /* AppDelegate.swift */; };
 		6A6F7E522096C907003B79B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F7E512096C907003B79B3 /* ViewController.swift */; };
 		6A6F7E552096C907003B79B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F7E532096C907003B79B3 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		6A0C4B3620983FFD008B9222 /* ServicesTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableTableViewController.swift; sourceTree = "<group>"; };
 		6A0C4B382098403A008B9222 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		6A0C4B3A20984073008B9222 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		6A0C4B3E20997BC4008B9222 /* aboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutUsViewController.swift; sourceTree = "<group>"; };
 		6A6F7E4C2096C907003B79B3 /* EuroStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6F7E4F2096C907003B79B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A6F7E512096C907003B79B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		6A0C4B3D20997B7E008B9222 /* About Us */ = {
+			isa = PBXGroup;
+			children = (
+				6A0C4B3E20997BC4008B9222 /* aboutUsViewController.swift */,
+			);
+			path = "About Us";
+			sourceTree = "<group>";
+		};
 		6A6F7E432096C907003B79B3 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 			children = (
 				6A6F7E4F2096C907003B79B3 /* AppDelegate.swift */,
 				6A6F7E512096C907003B79B3 /* ViewController.swift */,
+				6A0C4B3D20997B7E008B9222 /* About Us */,
 				6A0C4B3520983F94008B9222 /* Services */,
 				6A6F7E532096C907003B79B3 /* Main.storyboard */,
 				6A6F7E562096C907003B79B3 /* Assets.xcassets */,
@@ -276,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0C4B3F20997BC4008B9222 /* aboutUsViewController.swift in Sources */,
 				6A6F7E522096C907003B79B3 /* ViewController.swift in Sources */,
 				6A0C4B392098403A008B9222 /* ServicesTableViewCell.swift in Sources */,
 				6A6F7E502096C907003B79B3 /* AppDelegate.swift in Sources */,
