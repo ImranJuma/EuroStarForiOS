@@ -11,15 +11,15 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class PortfolioCollectionViewController: UICollectionViewController {
+    
+    //Here using strings we will use this to populate all the different images to load within the collection view
+    var imageList = ["Collection_View_Image_1", "Collection_View_Image_2", "Collection_View_Image_3", "Collection_View_Image_4", "Collection_View_Image_5"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -43,19 +43,24 @@ class PortfolioCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1 // This was chnaged to the value of 1, this is based off of the number of cells that we will be working with for the present time
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        // This will deisplay how many items to show the user, however we should modify this based on the amount of items that we have in our string, so based that number from here to be imageList.count so whnever the project is built is will built this and count to automatically update
+        return imageList.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        
+        // Here we will modify this similar to how we modifyed the table view
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath) as! PortfolioCollectionViewCell
     
         // Configure the cell
+        
+        cell.cellImage.image = UIImage(named: imageList[indexPath.row])
     
         return cell
     }

@@ -10,4 +10,7 @@ import UIKit
 
 class PortfolioCollectionViewCell: UICollectionViewCell {
     
+    //Outlet for the image view that we have creared 
+    @IBOutlet weak var cellImage: UIImageView!
+    
 }
