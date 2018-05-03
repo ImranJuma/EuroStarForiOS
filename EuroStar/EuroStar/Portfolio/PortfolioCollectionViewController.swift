@@ -49,14 +49,13 @@ class PortfolioCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        // This will deisplay how many items to show the user, however we should modify this based on the amount of items that we have in our string, so based that number from here to be imageList.count so whnever the project is built is will built this and count to automatically update
-        return imageList.count
+        return imageList.count // This will deisplay how many items to show the user, however we should modify this based on the amount of items that we have in our string, so based that number from here to be imageList.count so whnever the project is built is will built this and count to automatically update
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // Here we will modify this similar to how we modifyed the table view
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath) as! PortfolioCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PortfolioCollectionViewCell
     
         // Configure the cell
         

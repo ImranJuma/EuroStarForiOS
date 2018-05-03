@@ -287,17 +287,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="005-settings" translatesAutoresizingMaskIntoConstraints="NO" id="EXD-m1-X0M">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Collection_View_Image_1" translatesAutoresizingMaskIntoConstraints="NO" id="EXD-m1-X0M">
                                             <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="EXD-m1-X0M" secondAttribute="bottom" id="Boh-6T-0iH"/>
-                                    <constraint firstItem="EXD-m1-X0M" firstAttribute="top" secondItem="1ce-d8-PMu" secondAttribute="top" id="FqA-Vv-5hk"/>
-                                    <constraint firstItem="EXD-m1-X0M" firstAttribute="leading" secondItem="1ce-d8-PMu" secondAttribute="leading" id="Z0S-Bf-d40"/>
-                                    <constraint firstAttribute="trailing" secondItem="EXD-m1-X0M" secondAttribute="trailing" id="rY8-Ej-8ni"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="cellImage" destination="EXD-m1-X0M" id="QsP-8V-RbY"/>
                                 </connections>
@@ -464,6 +459,7 @@
         <image name="004-about-us" width="32" height="32"/>
         <image name="005-settings" width="32" height="32"/>
         <image name="Background Image" width="1562" height="2779"/>
+        <image name="Collection_View_Image_1" width="32" height="32"/>
         <image name="EuroStarLogo1" width="412" height="149"/>
     </resources>
 </document>
