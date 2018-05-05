@@ -322,46 +322,40 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HDR-sF-orQ">
-                                <rect key="frame" x="16" y="20" width="343" height="342"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HDR-sF-orQ">
+                                <rect key="frame" x="16" y="20" width="343" height="409"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="735-Zn-eOt">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="135"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="202"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC6-y8-gYp">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="47"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S96-Jw-sVq">
-                                                <rect key="frame" x="0.0" y="35" width="343" height="30"/>
+                                                <rect key="frame" x="0.0" y="52" width="343" height="46.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="dismissKeyboard:" destination="zIV-FZ-9X3" eventType="editingDidEndOnExit" id="4mO-3I-JxY"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwK-Z5-Cot">
-                                                <rect key="frame" x="0.0" y="70" width="343" height="30"/>
+                                                <rect key="frame" x="0.0" y="103.5" width="343" height="47"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vo-wS-P69">
-                                                <rect key="frame" x="0.0" y="105" width="343" height="30"/>
+                                                <rect key="frame" x="0.0" y="155.5" width="343" height="46.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="dismissKeyboard:" destination="zIV-FZ-9X3" eventType="editingDidEndOnExit" id="Gbd-mZ-6ob"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BDr-NQ-t9z">
-                                        <rect key="frame" x="0.0" y="140" width="343" height="202"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BDr-NQ-t9z">
+                                        <rect key="frame" x="0.0" y="207" width="343" height="202"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snd-my-KZS">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
@@ -369,7 +363,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ar6-ri-o01">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ar6-ri-o01">
                                                 <rect key="frame" x="0.0" y="26" width="343" height="176"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
@@ -379,8 +373,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-1P-S7X">
-                                <rect key="frame" x="16" y="378" width="343" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-1P-S7X">
+                                <rect key="frame" x="16" y="445" width="343" height="43"/>
                                 <color key="backgroundColor" red="0.76260900499999995" green="0.2090051621" blue="0.1922365576" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="Tto-P4-zog"/>
@@ -389,9 +383,6 @@
                                 <state key="normal" title="Send Email">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="sendEmail:" destination="zIV-FZ-9X3" eventType="touchUpInside" id="cVX-Xj-5NY"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -405,12 +396,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lFU-C5-nfo"/>
                     </view>
-                    <connections>
-                        <outlet property="emailField" destination="2Vo-wS-P69" id="4uY-y2-AEr"/>
-                        <outlet property="messageButton" destination="FIR-1P-S7X" id="rwu-eq-8jz"/>
-                        <outlet property="messageField" destination="Ar6-ri-o01" id="3dI-YG-9tL"/>
-                        <outlet property="nameField" destination="S96-Jw-sVq" id="a1C-aF-uCx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRu-lz-5Ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
