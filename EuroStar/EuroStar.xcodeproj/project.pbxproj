@@ -12,7 +12,6 @@
 		6A0C4B3B20984073008B9222 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C4B3A20984073008B9222 /* ServicesViewController.swift */; };
 		6A0C4B3F20997BC4008B9222 /* aboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C4B3E20997BC4008B9222 /* aboutUsViewController.swift */; };
 		6A128F2B209C20CA0017FF43 /* ContacUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A128F2A209C20CA0017FF43 /* ContacUsViewController.swift */; };
-		6A128F2E209C22070017FF43 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A128F2D209C22070017FF43 /* MapKit.framework */; };
 		6A6F7E502096C907003B79B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F7E4F2096C907003B79B3 /* AppDelegate.swift */; };
 		6A6F7E522096C907003B79B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F7E512096C907003B79B3 /* ViewController.swift */; };
 		6A6F7E552096C907003B79B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6F7E532096C907003B79B3 /* Main.storyboard */; };
@@ -22,6 +21,7 @@
 		6A6F7E702096C907003B79B3 /* EuroStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F7E6F2096C907003B79B3 /* EuroStarUITests.swift */; };
 		6A8E41F7209D82D000852841 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E41F6209D82D000852841 /* EmailViewController.swift */; };
 		6A8E41F9209D868F00852841 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8E41F8209D868500852841 /* MessageUI.framework */; };
+		6AB57BFB209D956C0030BD7D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A128F2D209C22070017FF43 /* MapKit.framework */; };
 		6AF05A67209AC3BD0014910B /* PortfolioCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF05A66209AC3BD0014910B /* PortfolioCollectionViewController.swift */; };
 		6AF05A69209AC3D10014910B /* PortfolioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF05A68209AC3D10014910B /* PortfolioCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -74,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB57BFB209D956C0030BD7D /* MapKit.framework in Frameworks */,
 				6A8E41F9209D868F00852841 /* MessageUI.framework in Frameworks */,
-				6A128F2E209C22070017FF43 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
