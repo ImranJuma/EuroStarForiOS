@@ -13,7 +13,7 @@ class SocialTableViewController: UITableViewController {
     
     //The Two Array's that we will use to controll the different titles, and headings for the application
     var imageList = ["Facebook_Image","Twitter_Image","Youtube_Image","GooglePlus_Image","LinkedIn_Image","Website_Image"]
-    var titleList = ["Facebook","Twitter","Youtube","Google+","LinkedIn","EuroStar Website"]
+    var titleList = ["Facebook","Twitter","YouTube","Google+","LinkedIn","EuroStar Website"]
     
     
     
