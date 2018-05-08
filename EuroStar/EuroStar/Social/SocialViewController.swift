@@ -27,13 +27,20 @@ class SocialViewController: UIViewController, UIWebViewDelegate {
         
         if navigationItem.title == "Facebook" {
          
-            print ("Facebook Button Pressed")
+         print ("Facebook Button Pressed")
+            
+        }
+            
+            /*
+            
             let url = NSURL(string: "http://www.facebook.com")
             let request = URLRequest(url: url! as URL)
             webView.loadRequest(request)
         }
-    
-    
+         
+         */
+        
+       
         // Load Twitter WebView
         if navigationItem.title == "Twitter" {
          
