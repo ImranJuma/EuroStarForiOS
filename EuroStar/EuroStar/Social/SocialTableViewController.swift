@@ -1,24 +1,35 @@
 //
-//  ServicesTableTableViewController.swift
+//  SocialTableViewController.swift
 //  EuroStar
 //
-//  Created by Imran Juma on 2018-05-01.
+//  Created by Imran Juma on 2018-05-08.
 //  Copyright © 2018 Imran Juma. All rights reserved.
 //
 
 import UIKit
 
-class ServicesTableTableViewController: UITableViewController {
+class SocialTableViewController: UITableViewController {
     
-    // Create an array for the view to load some various information
     
-    var titleList = ["Casement Windows and Awnings", "Bay and Bow Windows", "Single Hung and Single Slide Windows", "Double Hung and Double Slide Windows", "Tilt And Turn Windows", "Shaped and Picture Windows", "Front Entry Doors", "Sliding Patio Doors", "Lift Slide Doors", "French Doors and French Garden Doors", "Bi Folding Doors", "Tilt and Slide Doors"  ]
+    //The Two Array's that we will use to controll the different titles, and headings for the application
+    var imageList = ["Facebook_Image","Twitter_Image","Youtube_Image","GooglePlus_Image","LinkedIn_Image","Website_Image"]
+    var titleList = ["Facebook","Twitter","Youtube","Google+","LinkedIn","EuroStar Website"]
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    tableView.backgroundView = UIImageView(image: UIImage(named: "Background Image"))
-        
+        tableView.backgroundView = UIImageView(image: UIImage(named: "Background Image"))
+        self.navigationItem.title = "Social Links"
+
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,26 +41,23 @@ class ServicesTableTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        // Adding in the amount of sections we want
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        // Whenever the applications built, add the amount of cells for the amount of services that we are having
         return titleList.count
     }
 
-    // We want to reanable this code, so that we can configure the different services that we will be using
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // Allow this to be linked to the class that is controlling it
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ServicesTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SocialTableViewCell
+
+        cell.cellImage.image = UIImage(named: imageList[indexPath.row])
+        cell.CellTitle.text = titleList[indexPath.row]
         
-        // Populate the rows based on the services array that we have, and add this many rows thus the first cell, is the first entry in the array and so this will continue ... Configure the cell ...
-
-        cell.cellTitle.text = titleList[indexPath.row]
-
+        
 
         return cell
     }
@@ -62,6 +70,7 @@ class ServicesTableTableViewController: UITableViewController {
         return true
     }
     */
+    
 
     /*
     // Override to support editing the table view.
@@ -91,29 +100,21 @@ class ServicesTableTableViewController: UITableViewController {
     */
 
     
-     
-     
     // MARK: - Navigation
 
-  //  In a storyboard-based application, you will often want to do a little preparation before navigation
-    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // populate the data that we have create, once this is done load the image based on the title, as well as load the text as per the item we are looking for in array
         
-        // Population settings, we have also named the linking contact between the page, and the information deplaier the "Seuge", we have called this showDetail
+        //Preparing Sauge for when we are switching pages
+        
         if (segue.identifier == "showDetail") {
             
-            // allocate the text and display within a variible
-            let dvc = segue.destination as! ServicesViewController
+            let dvc = segue.destination as! SocialViewController
+            
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                dvc.sentData = titleList[indexPath.row] as String 
+                
+                dvc.sentData = titleList[indexPath.row] as String
             }
-            
-            
         }
-        
-        
-        
-        
     }
 }
