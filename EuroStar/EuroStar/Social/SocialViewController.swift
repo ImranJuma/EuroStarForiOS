@@ -58,7 +58,7 @@ class SocialViewController: UIViewController, UIWebViewDelegate {
          */
         
         // Load Google Plus WebView
-        if navigationItem.title == "Google Plus" {
+        if navigationItem.title == "Google+" {
          
          print ("Google+ Button Pressed")
          
@@ -76,7 +76,7 @@ class SocialViewController: UIViewController, UIWebViewDelegate {
         // Load LinkedIn WebView
         if navigationItem.title == "LinkedIn" {
          
-         print ("Facebook LinkedIn Pressed")
+         print ("LinkedIn Button Pressed")
          
          }
         
