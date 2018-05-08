@@ -37,49 +37,93 @@ class SocialViewController: UIViewController, UIWebViewDelegate {
             let request = URLRequest(url: url! as URL)
             webView.loadRequest(request)
         }
+         
+         */
         
        
         // Load Twitter WebView
         if navigationItem.title == "Twitter" {
+         
+         print ("Twitter Button Pressed")
+         
+         }
+        
+        /*
             
             let url = NSURL(string: "http://www.Twitter.com")
             let request = URLRequest(url: url! as URL)
             webView.loadRequest(request)
         }
+         
+         */
         
         // Load Google Plus WebView
         if navigationItem.title == "Google Plus" {
+         
+         print ("Google+ Button Pressed")
+         
+         }
+        
+        /*
             
             let url = NSURL(string: "http://GooglePlus.Com")
             let request = URLRequest(url: url! as URL)
             webView.loadRequest(request)
         }
+         
+         */
         
         // Load LinkedIn WebView
         if navigationItem.title == "LinkedIn" {
+         
+         print ("Facebook LinkedIn Pressed")
+         
+         }
+        
+        /*
             
             let url = NSURL(string: "http://www.LinkedIn.com")
             let request = URLRequest(url: url! as URL)
             webView.loadRequest(request)
         }
+         
+         */
         
         // Load YouTube WebView
         if navigationItem.title == "YouTube" {
+         
+         print ("YouTube Button Pressed")
+         
+         }
+        
+        /*
             
             let url = NSURL(string: "http://www.YouTube.com")
             let request = URLRequest(url: url! as URL)
             webView.loadRequest(request)
         }
+         
+         */
         
         // Load Website WebView
         if navigationItem.title == "EuroStar Website" {
+         
+         print ("Website Button Pressed")
+         
+         }
+        
+        /*
             
             let url = NSURL(string: "https://www.eurostarwindows.ca")
             let request = URLRequest(url: url! as URL)
             webView.loadRequest(request)
         }
- */
+ 
+  */
+        
     }
+ 
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
