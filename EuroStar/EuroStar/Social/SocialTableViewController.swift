@@ -2,7 +2,7 @@
 //  SocialTableViewController.swift
 //  EuroStar
 //
-//  Created by Imran Juma on 2018-05-08.
+//  Created by Imran Juma on 2018-05-10.
 //  Copyright © 2018 Imran Juma. All rights reserved.
 //
 
@@ -10,20 +10,12 @@ import UIKit
 
 class SocialTableViewController: UITableViewController {
     
-    
-    //The Two Array's that we will use to controll the different titles, and headings for the application
-    var imageList = ["Facebook_Image","Twitter_Image","Youtube_Image","GooglePlus_Image","LinkedIn_Image","Website_Image"]
-    var titleList = ["Facebook","Twitter","YouTube","Google+","LinkedIn","EuroStar Website"]
-    
-    
-    
+    var imageList = ["Facebook_Image","Twitter_Image","GooglePlus_Image","LinkedIn_Image","Youtube_Image","Website_Image"]
+    var titleList = ["Facebook","Twitter","GooglePlus","LinkedIn","Youtube","Website"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.backgroundView = UIImageView(image: UIImage(named: "Background Image"))
-        self.navigationItem.title = "Social Links"
-
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,14 +43,9 @@ class SocialTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SocialTableViewCell
-
         cell.cellImage.image = UIImage(named: imageList[indexPath.row])
-        cell.CellTitle.text = titleList[indexPath.row]
-        
-        
-
+        cell.cellTitle.text = titleList[indexPath.row]
         return cell
     }
     
@@ -70,7 +57,6 @@ class SocialTableViewController: UITableViewController {
         return true
     }
     */
-    
 
     /*
     // Override to support editing the table view.
@@ -99,22 +85,14 @@ class SocialTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //Preparing Sauge for when we are switching pages
-        
-        if (segue.identifier == "showDetail") {
-            
-            let dvc = segue.destination as! SocialViewController
-            
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                
-                dvc.sentData = titleList[indexPath.row] as String
-            }
-        }
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }
